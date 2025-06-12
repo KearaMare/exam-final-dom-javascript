@@ -85,7 +85,7 @@ function CreateModal() {
 	htcinqModal.classList.add("text-preset-5");
 	hqcinqModal.classList.add("text-preset-5");
 	hccinqModal.classList.add("text-preset-5");
-	BtnLog.classList.add("btn", "block", "blue-600", "neutral-o-text");
+	BtnLog.classList.add("btn", "block", "blue-600", "neutral-0-text");
 	hquatrebtn.classList.add("text-preset-4");
 
 	hdeuxModal.textContent = "Log your mood";
@@ -111,6 +111,7 @@ function CreateModal() {
 		const MoodList = document.createElement("p");
 		divList.appendChild(MoodList);
 		MoodList.classList.add("mood-card");
+		MoodList.classList.add("text-preset-4");
 		MoodList.textContent = nameMood;
 
 		if (nameMood == "very happy") {
@@ -131,7 +132,7 @@ function CreateModal() {
 		if (nameMood == "sad") {
 			ImgMood.src = "assets/sad.svg";
 			TextMood.textContent = nameMood;
-			MoodList.classList.add("indigo-300");
+			MoodList.classList.add("indigo-200");
 		}
 		if (nameMood == "very sad") {
 			ImgMood.src = "assets/very-sad.svg";
